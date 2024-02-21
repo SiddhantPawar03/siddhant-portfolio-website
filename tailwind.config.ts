@@ -16,7 +16,7 @@ const config = {
         DEFAULT: "2rem",
         xl: "4rem", 
         xxl: "6rem",
-        '2xl': "8rem",
+        xxxl: "8rem",
       },
     },
     screens: {

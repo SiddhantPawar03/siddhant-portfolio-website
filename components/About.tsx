@@ -232,8 +232,8 @@ const About = () => {
   };
 
   return (
-    <section className="xl:h-[860px] pb-12 xl:py-24">
-      <div className="container mx-auto">
+    <section className="xl:h-[860px] pb-12 xxl:pb-16 mb-12 xl:py-24">
+      <div className="container mx-auto px-4">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About me
         </h2>
@@ -246,7 +246,7 @@ const About = () => {
           </div>
           <div className="flex-1">
             <Tabs defaultValue="personal">
-              <TabsList className="w-full flex flex-wrap justify-center xl:grid xl:grid-cols-3xl:max-w-[520px] xl:border dark:border-none">
+            <TabsList className="w-full flex flex-wrap justify-center sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 xl:max-w-[1280px] xxl:grid-cols-6 xxl:max-w-[1440px] xxxl:grid-cols-7 xxxl:max-w-[1920px] dark:border-b border-border">
                 <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
                   Personal Info
                 </TabsTrigger>
