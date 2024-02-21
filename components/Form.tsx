@@ -47,13 +47,15 @@ const Form = () => {
         Let's Connect
         <ArrowRightIcon size={20} />
       </Button>
-      {state.errors && state.errors.length > 0 && (
-        <div>
-          {state.errors.map((error) => (
-            <p key={error.field}>{error.message}</p>
-          ))}
-        </div>
-      )}
+      {state.errors &&
+        Array.isArray(state.errors) &&
+        state.errors.length > 0 && (
+          <div>
+            {state.errors.map((error) => (
+              <p key={error.field}>{error.message}</p>
+            ))}
+          </div>
+        )}
     </form>
   );
 };
